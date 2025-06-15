@@ -26,10 +26,12 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 // Typewriter effect
 const typewriterElement = document.getElementById("typewriter");
 const phrases = [
-  "Junior Fullstack Developer (Web & Mobile)",
-  "Frontend & Backend Developer",
-  "UI/UX Enthusiast",
-  "Team & Solo Project Friendly",
+  "Junior Web Developer",
+  "Junior Mobile Developer",
+  "Junior Frontend Developer",
+  "Junior Backend Developer",
+  "UI/UX Designer",
+  "Mandiri & Tim Project Friendly",
 ];
 let phraseIndex = 0;
 let charIndex = 0;
