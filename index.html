@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8" />
@@ -47,26 +47,51 @@
       <a href="#portfolio">Project</a>
       <a href="#contact">Kontak</a>
     </div>
-    <button class="mobile-menu-btn">
+    <button class="mobile-menu-btn" aria-label="Buka menu navigasi" aria-expanded="false">
       <i class="fas fa-bars"></i>
     </button>
   </nav>
 
   <header id="home" class="hero">
     <div class="hero-content" data-aos="fade-right">
+      <div class="hero-kicker">
+        <span></span>
+        Available for Web & Mobile Projects
+      </div>
       <h1>Hai, saya <span>Faisal Djukiro</span></h1>
       <div class="typewriter" id="typewriter"></div>
       <p>Junior Fullstack Developer — Web & Mobile | Frontend & Backend | UI/UX Aware | Mandiri & Kolaboratif</p>
       <div class="btn-group">
-        <a href="#contact" class="btn btn-primary">HUBUNGI</a>
-        <a href="#portfolio" class="btn btn-outline">PROJECT</a>
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> HUBUNGI</a>
+        <a href="#portfolio" class="btn btn-outline"><i class="fas fa-layer-group"></i> PROJECT</a>
+      </div>
+      <div class="hero-stats" aria-label="Ringkasan pengalaman">
+        <div>
+          <strong>15+</strong>
+          <span>Project</span>
+        </div>
+        <div>
+          <strong>8+</strong>
+          <span>Stack</span>
+        </div>
+        <div>
+          <strong>Web</strong>
+          <span>& Mobile</span>
+        </div>
       </div>
     </div>
-    <img src="asset/person.jpeg" alt="Febrian Rizki" class="profile-pic" data-aos="fade-left">
+    <div class="profile-wrap" data-aos="fade-left">
+      <img src="asset/person.jpeg" alt="Faisal Djukiro" class="profile-pic">
+      <div class="profile-badge">
+        <i class="fas fa-code"></i>
+        <span>Fullstack Developer</span>
+      </div>
+    </div>
   </header>
 
   <section id="about">
     <h2 data-aos="fade-right">Tentang Saya</h2>
+    <p class="section-lead" data-aos="fade-right">Saya membangun aplikasi yang rapi, mudah dipakai, dan siap membantu pekerjaan nyata.</p>
     <div class="about-content">
       <div class="about-text" data-aos="fade-right">
         <p>
@@ -90,7 +115,7 @@
         </p>
 
         <div class="btn-group" style="margin-top: 2rem;">
-          <a href="asset/cv.pdf" class="btn btn-primary">Download CV</a>
+          <a href="asset/cv.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
         </div>
       </div>
       <div class="about-illustration" data-aos="fade-left">
@@ -101,6 +126,7 @@
 
   <section id="skills">
     <h2 data-aos="fade-right">Keahlian</h2>
+    <p class="section-lead" data-aos="fade-right">Teknologi yang sering saya gunakan untuk membangun frontend, backend, mobile, dan database.</p>
 
     <!-- Markup & Styling -->
     <h3 class="skill-category">Markup & Styling</h3>
@@ -500,8 +526,10 @@
 
   <section id="portfolio">
     <h2 data-aos="fade-right">Project</h2>
+    <p class="section-lead" data-aos="fade-right">Beberapa project yang pernah saya kerjakan, dari sistem informasi, aplikasi rumah sakit, hingga aplikasi mobile.</p>
     <div class="portfolio-grid">
       <div class="project-card" data-aos="fade-up">
+        <div class="project-icon"><i class="fas fa-newspaper"></i></div>
         <div class="project-info">
           <h3>Portal Berita</h3>
           <p>Proyek pengembangan portal berita yang saya kerjakan secara end-to-end, mulai dari perancangan UI/UX hingga
@@ -517,6 +545,7 @@
       </div>
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-icon"><i class="fas fa-map-location-dot"></i></div>
         <div class="project-info">
           <h3>Sistem Informasi Wisata</h3>
           <p>Saya mengembangkan sistem informasi pariwisata yang terdiri dari platform web dan aplikasi mobile. Website
@@ -536,6 +565,7 @@
       </div>
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-icon"><i class="fas fa-clinic-medical"></i></div>
         <div class="project-info">
           <h3>KLINIK BPK</h3>
           <p>Sistem informasi klinik yang saya kembangkan mencakup manajemen penjualan obat, pengelolaan stok, serta
@@ -553,6 +583,7 @@
 
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-icon"><i class="fas fa-box-archive"></i></div>
         <div class="project-info">
           <h3>Arsip Digital</h3>
           <p>Sistem arsip digital yang dikembangkan untuk mendukung pengelolaan dokumen di lingkungan kantor Badan
@@ -570,6 +601,7 @@
       </div>
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-icon"><i class="fas fa-bus"></i></div>
         <div class="project-info">
           <h3>Pelacakan Rute Bus BRT</h3>
           <p>Aplikasi Android untuk pelacakan rute Bus BRT secara real-time menggunakan integrasi Google Maps dan
@@ -587,6 +619,7 @@
       </div>
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="project-icon"><i class="fas fa-screwdriver-wrench"></i></div>
         <div class="project-info">
           <h3>Sistem Deteksi Kerusakan Mesin Cuci</h3>
           <p>Aplikasi yang dikembangkan untuk mendeteksi kerusakan pada mesin cuci secara otomatis menggunakan metode
@@ -603,6 +636,7 @@
       </div>
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-icon"><i class="fas fa-cake-candles"></i></div>
         <div class="project-info">
           <h3>Pemesanan Kue Tart</h3>
           <p>Aplikasi pemesanan kue tart berbasis web dan mobile yang memungkinkan pelanggan untuk memilih desain,
@@ -621,6 +655,7 @@
       </div>
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+        <div class="project-icon"><i class="fas fa-volume-high"></i></div>
         <div class="project-info">
           <h3>Call Antrian</h3>
           <p>Sistem pemanggilan antrian berbasis web yang saya kembangkan untuk mendukung proses pelayanan pasien di
@@ -636,6 +671,7 @@
         </div>
       </div>
       <div class="project-card" data-aos="fade-up" data-aos-delay="1400">
+        <div class="project-icon"><i class="fas fa-truck-medical"></i></div>
         <div class="project-info">
           <h3>Sistem Informasi Ambulance</h3>
           <p>
@@ -658,6 +694,7 @@
       </div>
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="1000">
+        <div class="project-icon"><i class="fas fa-hospital"></i></div>
         <div class="project-info">
           <h3>SIMRS KHANZA</h3>
           <p>Pengembangan dan upgrade pada Sistem Informasi Manajemen Rumah Sakit (SIMRS) berbasis open source KHANZA.
@@ -674,6 +711,7 @@
       </div>
 
       <div class="project-card" data-aos="fade-up" data-aos-delay="1000">
+        <div class="project-icon"><i class="fas fa-calculator"></i></div>
         <div class="project-info">
           <h3>Jasa Pelayanan Rumah Sakit</h3>
           <p>Website ini dikembangkan untuk menghitung jasa medis di RS AloeI Saboe. Sistem ini membantu proses
@@ -688,6 +726,7 @@
         </div>
       </div>
       <div class="project-card" data-aos="fade-up" data-aos-delay="1500">
+        <div class="project-icon"><i class="fas fa-link"></i></div>
         <div class="project-info">
           <h3>Bridging iDRG Kemenkes</h3>
           <p>
@@ -709,6 +748,7 @@
         </div>
       </div>
       <div class="project-card" data-aos="fade-up" data-aos-delay="1100">
+        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
         <div class="project-info">
           <h3>Sistem Perhitungan Jasa Remon</h3>
           <p>
@@ -727,6 +767,7 @@
         </div>
       </div>
       <div class="project-card" data-aos="fade-up" data-aos-delay="1200">
+        <div class="project-icon"><i class="fas fa-clipboard-check"></i></div>
         <div class="project-info">
           <h3>Sistem Penilaian E-Kinerja</h3>
           <p>
@@ -745,6 +786,7 @@
         </div>
       </div>
       <div class="project-card" data-aos="fade-up" data-aos-delay="1300">
+        <div class="project-icon"><i class="fas fa-mobile-screen-button"></i></div>
         <div class="project-info">
           <h3>RSAS MOBILE</h3>
           <p>
@@ -768,8 +810,9 @@
 
       <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
         <a href="https://github.com/faisaldjukiro" target="_blank" rel="noopener noreferrer"
-          class="btn btn-primary">View All Projects</a>
+          class="btn btn-primary"><i class="fab fa-github"></i> View All Projects</a>
       </div>
+    </div>
   </section>
 
   <section>
@@ -787,6 +830,7 @@
 
   <section id="contact">
     <h2 data-aos="fade-right">Hubungi Saya</h2>
+    <p class="section-lead" data-aos="fade-right">Terbuka untuk diskusi project, kolaborasi, atau peluang kerja di bidang web dan mobile development.</p>
     <div class="contact-container">
       <div class="contact-info" data-aos="fade-right">
         <div class="contact-item">
@@ -828,24 +872,26 @@
         </div>
       </div>
       <div class="contact-form" data-aos="fade-left">
-        <form>
+        <form action="https://formsubmit.io/send/faisaldjukiro98@gmail.com" method="POST">
+          <input type="hidden" name="_redirect" value="https://faisaldjukiro.github.io/portofolio/#contact">
+          <input type="text" name="_formsubmit_id" style="display: none;">
           <div class="form-group">
             <label for="name">Nama</label>
-            <input type="text" id="name" class="form-control" required>
+            <input type="text" id="name" name="name" class="form-control" required>
           </div>
           <div class="form-group">
-            <label for="email">Alamat</label>
-            <input type="email" id="email" class="form-control" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
           </div>
           <div class="form-group">
             <label for="subject">Subjek</label>
-            <input type="text" id="subject" class="form-control" required>
+            <input type="text" id="subject" name="subject" class="form-control" required>
           </div>
           <div class="form-group">
             <label for="message">Pesan</label>
-            <textarea id="message" class="form-control" required></textarea>
+            <textarea id="message" name="message" class="form-control" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
         </form>
       </div>
     </div>

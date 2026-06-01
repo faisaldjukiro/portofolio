@@ -10,6 +10,7 @@ const navLinks = document.querySelector(".nav-links");
 
 menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+  menuBtn.setAttribute("aria-expanded", navLinks.classList.contains("active"));
   menuBtn.innerHTML = navLinks.classList.contains("active")
     ? '<i class="fas fa-times"></i>'
     : '<i class="fas fa-bars"></i>';
@@ -19,6 +20,7 @@ menuBtn.addEventListener("click", () => {
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
+    menuBtn.setAttribute("aria-expanded", "false");
     menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
   });
 });
